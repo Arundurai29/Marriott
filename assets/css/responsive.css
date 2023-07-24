@@ -1,0 +1,122 @@
+@media (min-width: 701px) and (max-width: 900px) {
+  aside p {
+    display: none;
+  }
+  .submenu li > a {
+    font-size: 12px;
+  }
+  .submenu {
+    padding: 0;
+  }
+  aside {
+    position: relative;
+    height: 100vh;
+    padding: 30px 10px;
+  }
+  h4 {
+    font-size: 12px !important;
+  }
+  .menu-name h2 {
+    font-size: 16px;
+  }
+  .search-option input {
+    padding: 10px 0px 10px 40px;
+    width: 150px;
+  }
+  .detailes h3 {
+    font-size: 14px;
+  }
+  .detailes p {
+    font-size: 10px;
+  }
+  .user img {
+    margin-left: 10px;
+  }
+  .search-option i {
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .detailes h3 {
+    display: none;
+  }
+  .detailes p {
+    display: none;
+  }
+  .search-option input {
+    display: none;
+  }
+  .search-option i {
+    position: initial;
+    font-size: 20px;
+    background: var(--secondary-bg-color);
+    padding: 10px;
+    border-radius: var(--btn-border-radius);
+  }
+  .search-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-name h2 {
+    display: none;
+  }
+  .user img {
+    margin: 0;
+  }
+  .sidebar-logo img {
+    width: 100px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+  }
+
+  .sidebar-logo1 {
+    display: block;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .side {
+    display: none;
+    z-index: 999;
+    width: 50%;
+    position: fixed;
+    animation: slide 400ms ease-in-out forwards;
+  }
+
+  @keyframes slide {
+    to {
+      left: 0;
+    }
+  }
+  main {
+    width: 100%;
+  }
+  .notification {
+    margin-right: 10px;
+  }
+  .sidebar-logo1 img {
+    width: 100px;
+  }
+  .dash-first-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: none;
+    grid-gap: 20px 20px;
+  }
+  #myChart {
+    width: 100% !important;
+  }
+  .home-table-content {
+    padding: 20px 20px;
+  }
+  td {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    font-size: 12px;
+  }
+}
