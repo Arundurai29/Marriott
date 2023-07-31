@@ -891,6 +891,7 @@ input[type="file"] {
   display: grid;
   place-items: center;
   margin: 0px 10px;
+  cursor: pointer;
 }
 
 .all-table td > ul li:first-child {
