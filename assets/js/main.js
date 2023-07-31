@@ -1,11 +1,11 @@
 const ctx = document.getElementById('myChart');
 
 new Chart(ctx, {
-  type: 'bar',
+  type: 'line',
   data: {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    labels: ['apr', 'may', 'jun', 'jul', 'aus', 'sep'],
     datasets: [{
-      label: '# of Votes',
+      label: '# ',
       data: [12, 19, 3, 5, 2, 3],
       borderWidth: 1
     }]
@@ -18,8 +18,6 @@ new Chart(ctx, {
     }
   }
 });
-
-// <block:setup:1>
 const labels = Utils.months({count: 7});
 const data = {
   labels: labels,
@@ -31,17 +29,3 @@ const data = {
     tension: 0.1
   }]
 };
-// </block:setup>
-
-// <block:config:0>
-const config = {
-  type: 'line',
-  data: data,
-};
-// </block:config>
-
-module.exports = {
-  actions: [],
-  config: config,
-};
-

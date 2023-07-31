@@ -1,4 +1,4 @@
-@media (min-width: 701px) and (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 960px) {
   aside p {
     display: none;
   }
@@ -35,8 +35,133 @@
   .search-option i {
     font-size: 16px;
   }
+  .prog {
+    width: 90%;
+    height: 100px;
+  }
+  .user-card {
+    padding: 10px;
+  }
+  .user-card h4 {
+    font-size: 10px !important;
+  }
+  .user-card i {
+    right: 7px;
+    top: 10px;
+  }
+  .user-card h1 {
+    text-align: left;
+    font-size: 24px;
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  .chart-card h4 {
+    font-size: 10px !important;
+  }
+  .chart-card i {
+    right: 17px;
+    top: 20px;
+  }
+  #mychart {
+    height: 83% !important;
+    width: 100% !important;
+  }
+  .nav-link {
+    font-size: 14px !important;
+    padding: 0.5rem 3rem !important;
+  }
+  .prog-no2 {
+    bottom: 10px;
+    left: 20px;
+    font-size: 14px;
+  }
+  .prog-no1 {
+    font-size: 14px;
+    top: 25px;
+    right: 30px;
+  }
+  .chart-card ul {
+    margin: 20px 0 0;
+    padding: 0px;
+  }
+  .home-table-content {
+    padding: 20px 0px;
+  }
+  .main-content {
+    padding: 40px 20px;
+  }
+  td {
+    font-size: 14px;
+  }
+  .sidebar-logo img {
+    width: 75px;
+  }
+  .side {
+    width: 12%;
+  }
+  main {
+    width: 88%;
+  }
+  .pref-navlist {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+  }
+  .ffc2 {
+    width: 100%;
+  }
+  .first-form-content {
+    display: block;
+  }
+  .modal {
+    padding: 20px;
+  }
+  .modal-content {
+    margin: 0;
+    float: none;
+    width: 100% !important;
+  }
+  .ffc1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .fourth-form-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .filter-section {
+    display: block;
+  }
+  .filter-second {
+    margin: 20px 0px 0px;
+  }
+  .date-filter ul {
+    margin: 6px 0px 20px;
+  }
+  th {
+    font-size: 14px;
+  }
+  .preference {
+    margin-top: 88px;
+  }
+  .serch-group button :last-child {
+    margin: -9px 20px 0px;
+  }
+  .all-table td > p {
+    margin: 0 20px;
+    font-size: 12px;
+  }
+  .nav-pills .nav-link {
+    margin: 15px;
+  }
+  .all-search input {
+    width: 200px;
+  }
+  .head {
+    font-size: 14px;
+  }
 }
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .detailes h3 {
     display: none;
   }
@@ -111,12 +236,169 @@
     width: 100% !important;
   }
   .home-table-content {
-    padding: 20px 20px;
+    padding: 20px 0px;
   }
   td {
     border-color: inherit;
     border-style: solid;
     border-width: 0;
+    font-size: 8px;
+  }
+  .main-content {
+    padding: 20px 10px !important;
+  }
+  .home-table-content td > i {
+    width: 10px;
+    height: 10px;
+  }
+  .dsh-card-section {
+    display: grid;
+    width: 100%;
+  }
+  .user-cards {
+    width: 100%;
+    display: flex;
+  }
+  .user-card {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+  .user-card h1 {
+    font-size: 24px;
+  }
+  .user-card h4 {
+    font-size: 10px !important;
+  }
+  .chart-card {
+    width: 100%;
+    padding: 40px;
+    margin: 0px;
+  }
+  .nav-link {
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    margin: 0 !important;
+  }
+  .nav-item {
+    margin-right: 10px !important;
+  }
+  .nav {
+    margin-top: 30px;
+  }
+  .head {
+    font-size: 16px;
+  }
+  .preference {
+    margin-top: 100px;
+  }
+  .ffc2 {
+    width: 100%;
+  }
+  .first-form-content {
+    display: block;
+  }
+  .modal {
+    padding: 20px;
+  }
+  .modal-content {
+    margin: 0;
+    float: none;
+    width: 100% !important;
+  }
+  .sfc1 {
+    justify-content: space-between;
+  }
+  #add-btn {
+    font-size: 10px;
+  }
+  .sfc1 button {
+    margin: 0px !important;
+  }
+  /* input,
+  select,
+  textarea {
     font-size: 12px;
+  } */
+  .fourth-form-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .filter-section {
+    display: block;
+  }
+  .filter-second {
+    margin: 20px 0px 0px;
+  }
+  .date-filter ul {
+    margin: 6px 0px 20px;
+  }
+  th {
+    font-size: 8px !important;
+  }
+  .filter-second {
+    display: block;
+  }
+  .filter-second button {
+    margin: 20px 0px 0px !important;
+  }
+  .serch-group button {
+    margin: 0 !important;
+  }
+  .date-filter ul li {
+    font-size: 12px;
+  }
+  .above-table p {
+    font-size: 12px;
+  }
+  .above-table {
+    margin: 30px 0px 10px;
+  }
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-size: 12px !important;
+  }
+  .btn {
+    font-size: 12px !important;
+  }
+  .all-search input {
+    padding: 5px 10px 5px 33px;
+    width: 190px;
+  }
+  .ata1 button:last-child {
+    margin: 0;
+  }
+  .all-search {
+    margin: 0px 10px;
+  }
+  .all-table td > ul li {
+    padding: 10px;
+    margin: 0px 5px;
+  }
+  .all-table td > p {
+    margin: 0 10px;
+    font-size: 10px;
+  }
+  .all-table input {
+    width: 12px;
+    height: 12px;
+  }
+  .all-table td > p {
+    margin: 0 10px;
+    font-size: 10px;
+  }
+  .all-table-above {
+    display: block;
+  }
+  .nav-pills .nav-link {
+    margin: 15px !important;
+  }
+  .ata2 {
+    justify-content: start;
+    margin: 20px 0 0;
+  }
+  .all-con-tab {
+    padding: 10px;
   }
 }
