@@ -48,16 +48,18 @@
                       <p>Dashboard</p>
                     </a>
                   </li>
-                  <li class="menu">
-                    <a href="#">
+                  <li class="menu-item">
+                    <i class="fa-solid fa-chevron-down menu"></i>
+                    <a tabindex='-1' target="_blank" href="Contract-Dashboard1.html">
                       <i class="fa-solid fa-address-card"></i>
                       <p>Contract</p>
                     </a>
                     <ul class="submenu">
-                      <li><a href="contract.html" >Contract List</a></li>
+                      <li><a   href="contract.html" >All Contract List</a></li>
                     </ul>
                   </li>
-                  <li class="menu">
+                  <li class="menu-item">
+                    <i class="fa-solid fa-chevron-down menu"></i>
                     <a href="#">
                       <span class="material-symbols-rounded">
                         format_list_bulleted
@@ -114,7 +116,7 @@
   <script>
     $(function () {
     $(".submenu").hide();
-    $(".menu a").click(function (e) {
+    $(".menu").click(function (e) {
         var elems = $(this).closest('li');
         elems.siblings('li').find('ul').hide();
         if (elems.find('.submenu').length) {
@@ -122,6 +124,10 @@
         }
         return false;
     });
+});
+
+$('.submenu > a:not(a[href="#"])').on('click', function() {
+    self.location = $(this).attr('href');
 });
   </script>
     <!-- bootstrap script -->
