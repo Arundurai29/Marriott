@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marriott</title>
+
+    <style></style>
+  </head>
+  <body>
+    <button id="theme">
+      <i class="fa-solid fa-fill-drip"></i>
+    </button>
+
+    <div class="theme-customizer">
+      <a href="#" class="cancel"><i class="fa-solid fa-xmark"></i></a>
+      <h2>Theme Customizer</h2>
+      <div class="themevariation">
+        <h3 class="theme-head">Theme Variation</h3>
+        <div class="theme-var">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Light
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault2"
+            />
+            <label class="form-check-label" for="flexRadioDefault2">
+              Dark
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault3"
+            />
+            <label class="form-check-label" for="flexRadioDefault3">
+              Semi Dark
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="themevariation">
+        <div class="theme-var">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Minimal Theme
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="themevariation">
+        <h3 class="theme-head pb-0">Header Colors</h3>
+      </div>
+      <div class="themevariation">
+        <ul class="theme-colors">
+          <li class="theme-color" style=" background: #091f43;"></li>
+          <li class="theme-color"style=" background: #f0ccb0; "></li>
+          <li class="theme-color"style="  background: #2a93d5;"></li>
+          <li class="theme-color"style=" background: #135589;"></li>
+          <li class="theme-color"style="  background: #ec2404;"></li>
+          <li class="theme-color"style=" background: #544f4d; "></li>
+          <li class="theme-color"style=" background: #ffba44;"></li>
+          <li class="theme-color"style="background: #ff6632; "></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- bootstrap script -->
+    <script>
+      $(document).ready(function () {
+        $(".theme-customizer").hide();
+        $("#theme").click(function () {
+          $(".theme-customizer").show();
+        });
+        $(".cancel").click(function () {
+          $(".theme-customizer").hide();
+        });
+      });
+      function hidePopup() {
+        const t = document.getElementById("myModal");
+        modal.style.display = "none";
+        document.getElementById("editIndex").value = "";
+      }
+      var lighttheme = document.getElementById("flexRadioDefault1");
+      var darktheme = document.getElementById("flexRadioDefault2");
+      var semitheme = document.getElementById("flexRadioDefault3");
+
+      darktheme.onclick = function () {
+        document.body.classList.add("bluetheme");
+        if (document.body.classList.contains("bluetheme")) {
+          document.body.classList.remove("semitheme");
+        }
+      };
+      semitheme.onclick = function () {
+        document.body.classList.add("semitheme");
+        if (document.body.classList.contains("semitheme")) {
+          document.body.classList.remove("bluetheme");
+        }
+      };
+      lighttheme.onclick = function () {
+          document.body.classList.remove("bluetheme");
+          document.body.classList.remove("semitheme");
+      };
+document.querySelectorAll('.theme-color').forEach(themecolor =>{
+  themecolor.onclick=function(){
+let background=themecolor.style.background;
+document.querySelector(':root').style.setProperty('--navbar-bg',background);
+document.body.classList.add("navcolor");
+      }
+})
+    
+    </script>
+  </body>
+</html>

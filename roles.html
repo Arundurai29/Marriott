@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marriott</title>
+
+    <!-- customise css links -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- responsive css links -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- bootstarp cdn links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2
+  /dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha38
+  4-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- google fonts link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <style>
+      #add-btn {
+        margin: 24px 20px 0px !important;
+        height: 42px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="themer"></div>
+    <section class="web-body">
+      <div class="side">
+        <div class="sidebar"></div>
+      </div>
+      <main>
+        <nav>
+          <div class="navbar"></div>
+        </nav>
+        <section class="main-content">
+          <h1 class="head">Company</h1>
+          <div class="company-content">
+            <form action="">
+              <div class="company-ff">
+                <div class="company-fild">
+                  <label for="title"> Select Role Category </label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Select</option>
+                    <option value="1">Administrator</option>
+                    <option value="2">Creators</option>
+                    <option value="3">Approvers</option>
+                    <option value="3">Clause Owners</option>
+                    <option value="3">Vendors</option>
+                  
+                  </select>
+                  <i class="fa-solid fa-caret-down sel-arr"></i>
+                </div>
+
+                <div class="company-fild">
+                  <label for="title"> Role Name</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <button id="add-btn" type="submit">Submit</button>
+              </div>
+            </form>
+            <div class="home-table-content user-content">
+              <h2 class="head">Vendors LIST</h2>
+              <div class="userlist">
+                <div class="userlist-c1">
+                  <span> Show </span>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>10</option>
+                    <option value="1">20</option>
+                    <option value="2">30</option>
+                    <option value="3">40</option>
+                  </select>
+                  <span>entries</span>
+                </div>
+                <div class="userlist-c1">
+                  <label for="title">Search: </label>
+                  <input
+                    type="search"
+                    id="
+                   Password"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="listtable">
+                <table>
+                  <thead>
+                    <th>S.No</th>
+                    <th>Category</th>
+                    <th>Role Name</th>
+                    <th>Options</th>
+                  </thead>
+                  <tr>
+                    <td>1</td>
+                    <td>Creators</td>
+                    <td>Creator</td>
+                    <td>
+                      <i class="fa-solid fa-check check1"></i>
+                      <i class="fa-regular fa-eye eye"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Approvers</td>
+                    <td>Approver</td>
+
+                    <td>
+                      <i class="fa-solid fa-check check1"></i>
+                      <i class="fa-regular fa-eye eye"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Clause Owners</td>
+                    <td>Clause Owners</td>
+
+                    <td>
+                      <i class="fa-solid fa-check check1"></i>
+                      <i class="fa-regular fa-eye eye"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Vendors</td>
+                    <td>Vendor</td>
+
+                    <td>
+                      <i class="fa-solid fa-check check1"></i>
+                      <i class="fa-regular fa-eye eye"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Approvers</td>
+                    <td>Reporting Manager</td>
+
+                    <td>
+                      <i class="fa-solid fa-check check1"></i>
+                      <i class="fa-regular fa-eye eye"></i>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="userlist-nav">
+                <div class="userlist-nav1">
+                  <p>Showing 1 to 5 of 5 entries</p>
+                </div>
+                <div class="userlist-nav2">
+                  <button><i class="fa-solid fa-chevron-left"></i></button>
+                  <button class="warring text-white">1</button>
+                  <button><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery script cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- chart script -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- file change script link -->
+    <script src="assets/js/filechan.js"></script>
+    <!-- main script link -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

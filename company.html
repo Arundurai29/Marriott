@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marriott</title>
-  
+
     <!-- customise css links -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- responsive css links -->
@@ -30,12 +30,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-    <style>
-      canvas{
-        max-height: 500px !important;
-        width: 100%;
-      }
-    </style>
   </head>
   <body>
     <div class="themer"></div>
@@ -48,22 +42,47 @@
           <div class="navbar"></div>
         </nav>
         <section class="main-content">
-          <div class="chart">
-            <div class="chart-above">
-              <h2 class="head">Contract Details</h2>
-              <div class="chart-download">
-                <select name="" id="cartd">
-                  <option value="">2023</option>
-                  <option value="">2022</option>
-                  <option value="">2021</option>
-                  <option value="">2020</option>
-                  <option value="">2019</option>
-                </select>
-                <button><i class="fa-solid fa-share-nodes"></i></button>
-                <button><i class="fa-solid fa-download"></i></button>
+          <h1 class="head">Company</h1>
+          <div class="company-content">
+            <form action="">
+              <div class="company-ff">
+                <div class="company-fild">
+                  <label for="title">Company Name</label>
+                  <input type="text" id="title" value="Marriot" />
+                </div>
+                <div class="company-fild">
+                  <label for="title">CIN</label>
+                  <input type="text" id="title" value="478272837" />
+                </div>
+                <div class="company-fild">
+                  <label for="title"> Registration Date</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    value="17/05/1984"
+                    id="validServer03"
+                    name="validServer03"
+                    required=""
+                    data-dtp="dtp_3STLa"
+                  />
+                </div>
               </div>
-            </div>
-            <canvas id="myChart"></canvas>
+              <div class="company-ff1">
+                <div class="company-fild">
+                  <label for="title">Logo</label>
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="validServer04"
+                    name="validServer04"
+                    aria-describedby="validServer04"
+                    aria-label="Upload"
+                    accept=".jpg, .png, image/jpeg, image/png"
+                  />
+                </div>
+                <button id="add-btn" type="submit">Submit</button>
+              </div>
+            </form>
           </div>
         </section>
       </main>
@@ -85,4 +104,3 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
-

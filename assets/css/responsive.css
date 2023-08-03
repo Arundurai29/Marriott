@@ -160,7 +160,35 @@
   .head {
     font-size: 14px;
   }
+
+  /* company style */
+  .company-ff1 > .company-fild {
+    margin: 0px 10px;
+  }
+  .company-ff1 button {
+    margin-right: 10px !important;
+  }
+  .char-link {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .line-none {
+    display: none;
+  }
+  .pdf-icon {
+    display: flex;
+    margin: 10px 0px;
+  }
 }
+/* 1
+1
+1
+1
+1
+1
+1
+1
+1 */
 @media (max-width: 600px) {
   .detailes h3 {
     display: none;
@@ -236,20 +264,21 @@
     width: 100% !important;
   }
   .home-table-content {
-    padding: 20px 0px;
+    padding: 20px;
   }
   td {
     border-color: inherit;
     border-style: solid;
     border-width: 0;
-    font-size: 8px;
+    font-size: 10px;
+    padding: 0px 15px;
   }
   .main-content {
     padding: 20px 10px !important;
   }
   .home-table-content td > i {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
   }
   .dsh-card-section {
     display: grid;
@@ -333,7 +362,7 @@
     margin: 6px 0px 20px;
   }
   th {
-    font-size: 8px !important;
+    font-size: 12px !important;
   }
   .filter-second {
     display: block;
@@ -400,5 +429,67 @@
   }
   .all-con-tab {
     padding: 10px;
+  }
+  /* company style */
+  .company-ff1 > .company-fild {
+    margin: 0px;
+  }
+  .company-ff {
+    display: block;
+  }
+  .company-ff1 button {
+    margin-right: 0px !important;
+  }
+  .company-ff2 {
+    display: block;
+  }
+  .userlist {
+    display: block;
+  }
+  .userlist-c1 {
+    display: flex;
+    justify-content: start;
+  }
+  label,
+  span {
+    font-size: 12px !important;
+  }
+  .userlist span {
+    font-size: 12px !important;
+  }
+  .userlist-nav1 p {
+    font-size: 12px;
+    margin: 0;
+  }
+  .userlist-nav2 button {
+    padding: 5px 10px;
+  }
+  .listtable tr > td:last-child {
+    display: flex;
+  }
+  .userlist-c1 select {
+    width: 80px;
+  }
+  .char-link li > a {
+    font-size: 10px;
+    padding: 0.5rem 1rem !important;
+  }
+  .char-link {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .char-link {
+    margin: 0 0 20px;
+  }
+  .char-link li {
+    padding: 0px;
+  }
+  .line-none1 {
+    display: none;
+  }
+  .pdf-icon {
+    display: flex;
+    margin: 10px 0px;
   }
 }

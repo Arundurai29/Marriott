@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marriott</title>
-  
+
     <!-- customise css links -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- responsive css links -->
@@ -31,39 +31,77 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
     />
     <style>
-      canvas{
-        max-height: 500px !important;
-        width: 100%;
+      .nav-pills .nav-link.active {
+        background: #fff !important;
+        color: #252424 !important;
+      }
+      .nav-pills .nav-link {
+        background: #fff !important;
+        box-shadow: 0px 1px 19px 0px rgba(0, 0, 0, 0.09) !important;
+        padding: 0.5rem 2rem !important;
+      }
+      .nav-pills .nav-link:hover {
+        background: #091f43 !important;
+        color: #fff !important;
+      }
+      main {
+        width: 100% !important;
+      }
+      .char-link li > a {
+        padding: 0.5rem 1.8rem !important;
       }
     </style>
   </head>
   <body>
     <div class="themer"></div>
     <section class="web-body">
-      <div class="side">
-        <div class="sidebar"></div>
-      </div>
       <main>
         <nav>
           <div class="navbar"></div>
         </nav>
         <section class="main-content">
-          <div class="chart">
-            <div class="chart-above">
-              <h2 class="head">Contract Details</h2>
-              <div class="chart-download">
-                <select name="" id="cartd">
-                  <option value="">2023</option>
-                  <option value="">2022</option>
-                  <option value="">2021</option>
-                  <option value="">2020</option>
-                  <option value="">2019</option>
-                </select>
-                <button><i class="fa-solid fa-share-nodes"></i></button>
-                <button><i class="fa-solid fa-download"></i></button>
-              </div>
+          <div class="all-first-content">
+            
+
+            <div class="pdf-above">
+              <h4>Contract List</h4>
+              <a href="#"> <i class="fa-solid fa-bars"></i></a>
+              <h5>View Contracts</h5>
             </div>
-            <canvas id="myChart"></canvas>
+
+            <div class="pdf">
+              <div class="pdf-f1">
+                <div class="pdf-icon">
+                  <i class="fa-solid fa-check-to-slot"></i>
+                  <p>Choose Contracts</p>
+                </div>
+                <div class="pdf-line line-none1"></div>
+                <div class="pdf-icon">
+                  <i class="fa-solid fa-pen"></i>
+                  <p>Add/Update Contracts</p>
+                </div>
+                <div class="pdf-line line-none1 line-none"></div>
+                <div class="pdf-icon">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>Preview & Sign</p>
+                </div>
+                <div class="pdf-line line-none1"></div>
+                <div class="pdf-icon">
+                  <i class="fa-solid fa-user-check"></i>
+                  <p>Approve</p>
+                </div>
+              </div>
+              <div class="pdf-f2">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-house"></i>Preview
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-download"></i> Download
+                    </li>
+                  </ul>
+              <iframe src="assets/img/download.pdf" width="100%" height="500px"></iframe>
+            </div></div>
           </div>
         </section>
       </main>
@@ -85,4 +123,3 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
-
