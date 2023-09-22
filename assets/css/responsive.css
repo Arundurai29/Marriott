@@ -2,53 +2,68 @@
   aside p {
     display: none;
   }
-  .submenu li > a {
+
+  .submenu li>a {
     font-size: 12px;
   }
+
   .submenu {
     padding: 0;
   }
+
   aside {
     position: relative;
     height: 100vh;
     padding: 30px 10px;
   }
+
   h4 {
     font-size: 12px !important;
   }
+
   .menu-name h2 {
     font-size: 16px;
   }
+
   .search-option input {
     padding: 10px 0px 10px 40px;
     width: 150px;
   }
+
   .detailes h3 {
     font-size: 14px;
   }
+
   .detailes p {
     font-size: 10px;
   }
+
   .user img {
     margin-left: 10px;
   }
+
   .search-option i {
     font-size: 16px;
   }
+
   .prog {
     width: 90%;
     height: 100px;
   }
+
   .user-card {
     padding: 10px;
   }
+
   .user-card h4 {
     font-size: 10px !important;
   }
+
   .user-card i {
     right: 7px;
     top: 10px;
   }
+
   .user-card h1 {
     text-align: left;
     font-size: 24px;
@@ -59,127 +74,163 @@
   .chart-card h4 {
     font-size: 10px !important;
   }
+
   .chart-card i {
     right: 17px;
     top: 20px;
   }
+
+
   #mychart {
     height: 83% !important;
     width: 100% !important;
   }
+
   .nav-link {
     font-size: 14px !important;
     padding: 0.5rem 3rem !important;
   }
+
   .prog-no2 {
     bottom: 10px;
     left: 20px;
     font-size: 14px;
   }
+
   .prog-no1 {
     font-size: 14px;
     top: 25px;
     right: 30px;
   }
+
   .chart-card ul {
     margin: 20px 0 0;
     padding: 0px;
   }
+
   .home-table-content {
+    overflow-x: scroll;
     padding: 20px 0px;
   }
+
   .main-content {
-    padding: 40px 20px;
+    padding: 20px 20px;
   }
+
   td {
     font-size: 14px;
   }
+
   .sidebar-logo img {
     width: 75px;
   }
+
   .side {
     width: 12%;
   }
+
   main {
     width: 88%;
   }
+
   .pref-navlist {
     align-items: center;
     justify-content: center;
     display: grid;
   }
+
   .ffc2 {
     width: 100%;
   }
+
   .first-form-content {
     display: block;
   }
+
   .modal {
     padding: 20px;
   }
+
   .modal-content {
     margin: 0;
     float: none;
     width: 100% !important;
   }
+
   .ffc1 {
     display: flex;
     justify-content: space-between;
   }
+
   .fourth-form-content {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .filter-section {
     display: block;
   }
+
   .filter-second {
     margin: 20px 0px 0px;
   }
+
   .date-filter ul {
     margin: 6px 0px 20px;
   }
+
   th {
     font-size: 14px;
   }
+
   .preference {
     margin-top: 88px;
   }
+
   .serch-group button :last-child {
     margin: -9px 20px 0px;
   }
-  .all-table td > p {
+
+  .all-table td>p {
     margin: 0 20px;
     font-size: 12px;
   }
+
   .nav-pills .nav-link {
     margin: 15px;
   }
+
   .all-search input {
     width: 200px;
   }
+
   .head {
     font-size: 14px;
   }
 
   /* company style */
-  .company-ff1 > .company-fild {
+  .company-ff1>.company-fild {
     margin: 0px 10px;
   }
+
   .company-ff1 button {
     margin-right: 10px !important;
   }
+
   .char-link {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+
   .line-none {
     display: none;
   }
+
   .pdf-icon {
     display: flex;
     margin: 10px 0px;
   }
 }
+
 /* 1
 1
 1
@@ -193,12 +244,23 @@
   .detailes h3 {
     display: none;
   }
+  .con-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
   .detailes p {
     display: none;
+  }
+  .date-filter ul{
+    font-size: 12px;
+    margin-top: 30px;
+    justify-content: space-evenly;
   }
   .search-option input {
     display: none;
   }
+
   .search-option i {
     position: initial;
     font-size: 20px;
@@ -206,21 +268,27 @@
     padding: 10px;
     border-radius: var(--btn-border-radius);
   }
+
   .search-option {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .menu-name h2 {
     display: none;
   }
+
   .user img {
     margin: 0;
   }
+
   .sidebar-logo img {
     width: 100px;
   }
+
   header {
+    margin-left: 10px;
     display: flex;
     justify-content: space-between;
     padding: 10px 10px;
@@ -229,9 +297,11 @@
   .sidebar-logo1 {
     display: block;
   }
+
   .menu-btn {
     display: block;
   }
+
   .side {
     display: none;
     z-index: 999;
@@ -245,27 +315,39 @@
       left: 0;
     }
   }
+
   main {
     width: 100%;
   }
+
   .notification {
     margin-right: 10px;
   }
+
   .sidebar-logo1 img {
     width: 100px;
   }
+
   .dash-first-content {
     width: 100%;
     display: grid;
     grid-template-columns: none;
     grid-gap: 20px 20px;
   }
+.contractTable{
+  margin-top: 30px;
+  width: 100%;
+  overflow-x: scroll;
+}
   #myChart {
     width: 100% !important;
   }
+
   .home-table-content {
     padding: 20px;
+    overflow-x: scroll;
   }
+
   td {
     border-color: inherit;
     border-style: solid;
@@ -273,77 +355,103 @@
     font-size: 10px;
     padding: 0px 15px;
   }
+
   .main-content {
     padding: 20px 10px !important;
   }
-  .home-table-content td > i {
+
+  .home-table-content td>i {
     width: 20px;
     height: 20px;
   }
+
   .dsh-card-section {
     display: grid;
     width: 100%;
   }
+
   .user-cards {
     width: 100%;
     display: flex;
   }
+
   .user-card {
     padding: 20px;
     margin: 20px 10px;
   }
+
   .user-card h1 {
     font-size: 24px;
   }
+
   .user-card h4 {
     font-size: 10px !important;
   }
+
   .chart-card {
     width: 100%;
     padding: 40px;
     margin: 0px;
   }
+
   .nav-link {
     display: block;
     font-size: 14px;
     width: 100%;
     margin: 0 !important;
   }
+
   .nav-item {
     margin-right: 10px !important;
   }
+
   .nav {
     margin-top: 30px;
   }
+
   .head {
     font-size: 16px;
   }
+
   .preference {
     margin-top: 100px;
   }
+
   .ffc2 {
     width: 100%;
   }
+
   .first-form-content {
     display: block;
   }
+
   .modal {
     padding: 20px;
   }
+
   .modal-content {
     margin: 0;
     float: none;
     width: 100% !important;
   }
+
   .sfc1 {
     justify-content: space-between;
   }
+
   #add-btn {
-    font-size: 10px;
+    padding: 5px 10px;
+    font-size: 15px;
   }
+
+  .company-content form {
+    padding: 15px 10px;
+  }
+
   .sfc1 button {
     margin: 0px !important;
   }
+
   /* input,
   select,
   textarea {
@@ -352,128 +460,162 @@
   .fourth-form-content {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .filter-section {
     display: block;
   }
+
   .filter-second {
     margin: 20px 0px 0px;
   }
-  .date-filter ul {
-    margin: 6px 0px 20px;
-  }
+
+ 
+
   th {
     font-size: 12px !important;
   }
+
   .filter-second {
     display: block;
   }
+
   .filter-second button {
     margin: 20px 0px 0px !important;
   }
+
   .serch-group button {
     margin: 0 !important;
   }
-  .date-filter ul li {
-    font-size: 12px;
-  }
+
+
+
   .above-table p {
     font-size: 12px;
   }
+
   .above-table {
     margin: 30px 0px 10px;
   }
+
   input,
   optgroup,
   select,
   textarea {
     font-size: 12px !important;
   }
+
   .btn {
     font-size: 12px !important;
   }
+
   .all-search input {
     padding: 5px 10px 5px 33px;
     width: 190px;
   }
+
   .ata1 button:last-child {
     margin: 0;
   }
+
   .all-search {
     margin: 0px 10px;
   }
-  .all-table td > ul li {
+
+  .all-table td>ul li {
     padding: 10px;
     margin: 0px 5px;
   }
-  .all-table td > p {
+
+  .all-table td>p {
     margin: 0 10px;
     font-size: 10px;
   }
+
   .all-table input {
     width: 12px;
     height: 12px;
   }
-  .all-table td > p {
+
+  .all-table td>p {
     margin: 0 10px;
     font-size: 10px;
   }
+
   .all-table-above {
     display: block;
   }
+
   .nav-pills .nav-link {
     margin: 15px !important;
   }
+
   .ata2 {
     justify-content: start;
     margin: 20px 0 0;
   }
+
   .all-con-tab {
     padding: 10px;
   }
+
   /* company style */
-  .company-ff1 > .company-fild {
+  .company-ff1>.company-fild {
     margin: 0px;
   }
+
   .company-ff {
     display: block;
   }
+
   .company-ff1 button {
     margin-right: 0px !important;
   }
+
   .company-ff2 {
     display: block;
   }
+
   .userlist {
     display: block;
   }
+
   .userlist-c1 {
     display: flex;
+    margin-top: 15px;
     justify-content: start;
   }
+
   label,
   span {
     font-size: 12px !important;
   }
+
   .userlist span {
     font-size: 12px !important;
   }
+
   .userlist-nav1 p {
     font-size: 12px;
     margin: 0;
   }
+
   .userlist-nav2 button {
     padding: 5px 10px;
   }
-  .listtable tr > td:last-child {
+
+  .listtable tr>td:last-child {
     display: flex;
   }
+
   .userlist-c1 select {
     width: 80px;
   }
-  .char-link li > a {
+
+  .char-link li>a {
     font-size: 10px;
     padding: 0.5rem 1rem !important;
   }
+
   .char-link {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -482,14 +624,279 @@
   .char-link {
     margin: 0 0 20px;
   }
+
   .char-link li {
     padding: 0px;
   }
+
   .line-none1 {
     display: none;
   }
+
   .pdf-icon {
     display: flex;
     margin: 10px 0px;
   }
+
+  /* --projrect=========== */
+  .proj2-tableHead a {
+    margin-left: 120px;
+  }
+
+  .proj-content {
+    height: 800px;
+  }
+
+  .projectAbout {
+
+    flex-direction: column;
+    height: 400px;
+  }
+
+  .user-connect2 {
+    margin: 30px 0 0 0px;
+  }
+
+  .user-name {
+    margin: 10px 0 0 0px;
+    padding: 0 8xpx;
+    text-align: center;
+  }
+
+  .user-img {
+    margin-top: 10px;
+  }
+
+  .fa-linkedin-in {
+    font-size: 22px;
+  }
+
+  .fa-facebook-f {
+    font-size: 22px;
+  }
+
+  .user-connect2 ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .proj-para {
+    padding: 0 20px 0 20px;
+  }
+
+  .proj-para h4 {
+    font-weight: 600;
+  }
+
+  .user-connect2 {
+    margin: 20px 0 0 0;
+  }
+
+  .proj2-tableHead h3 {
+    font-weight: bold;
+    padding: 0 50px 0 10px;
+
+  }
+
+  .proj2-tableHead {
+    margin: 0;
+  }
+
+  .proj2-tableHead a {
+    font-size: 12px;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 10px 10px 10px;
+    margin: 0 0 0 30px;
+    color: white;
+    background-color: var(--third-bg-color);
+    border-radius: var(--btn-border-radius);
+  }
+
+  .proj-2Table {
+    overflow-x: scroll;
+    padding: 5px;
+    margin: 15px 0 0 0px;
+  }
+
+  .proj-2Table th {
+    padding: 5px;
+  }
+
+  .proj-2Table td {
+    margin-top: 10px;
+  }
+
+  .proj-content-2 {
+    margin-top: 30px;
+    height: 450px;
+  }
+
+  /* ---user---preview page */
+
+  #myTab {
+    border: 0;
+    justify-content: center;
+    margin: 0px 0px 0 10px;
+    padding: 170px 0 0 5px;
+  }
+
+  .pillcont {
+    margin-top: 20px;
+  }
+
+  .fa-twitter,
+  .fa-square-facebook,
+  .fa-instagram {
+    font-size: 20px;
+    padding-right: 5px;
+  }
+
+  .previewSetting {
+    padding: 20px;
+  }
+
+  .form-check-input {
+    margin-top: 8px !important;
+  }
+
+  /* .form-check-label{
+    padding-top: -30px !important;
+  } 
+
+
+  /* --newcontract------------ */
+  .cont-addbtn {
+    margin: 50px 0 0 0 !important;
+  }
+
+
+
+  /* ---newuser---- */
+
+
+
+  .newuser {
+    width: 99%;
+    margin: 40px 0 0 0;
+  }
+
+  .level-update {
+    width: 80%;
+    margin: -30px 0 0px 30px !important;
+  }
+
+  .newuser-nxt1 {
+    margin: 20px 140px 0 0;
+
+    border-radius: var(--btn-border-radius);
+    color: white;
+    padding: 10px 30px;
+    background-color: var(--third-bg-color);
+  }
+
+  .newuser h5 {
+    padding: 100px 0 0 40px;
+  }
+
+  .newCont {
+    height: 900px;
+  }
+
+  .second-form-content {
+    padding: 10px 0px;
+  }
+
+  .first-form-content {
+
+    padding: 35px 0px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .thrid-form-content {
+    padding: 0px 0px 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .popsum {
+    padding: 12px 18px !important;
+  }
+
+  #add-btn img {
+    width: 15px;
+    margin: 0px 0px;
+  }
+
+  .ckeditor {
+    width: 100%;
+  }
+
+  .brow-btn2 {
+    margin: 80px 0 0 0;
+  }
+
+  .Cont-section{
+    margin-top: 10px;
+  }
+  /* .FormInput{
+  width: 100%;
+} */
+  .company-fild select {
+    width: 100%;
+  }
+
+  #progressbar {
+    margin-left: -30px;
+    margin-right: 0px;
+    margin-bottom: 32px;
+  }
+
+  #heading {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+
+  .fs-title {
+    font-size: 16px;
+  }
+
+  .steps {
+    font-size: 15px;
+  }
+
+  .card {
+    margin-top: 10px;
+    /* width: fit-content;
+  margin-left:8%; */
+  }
+
+  .formStep-1 h5 {
+    padding: 15px 0 0 5px;
+    font-size: 15px;
+  }
+
+  .multiple-card {
+    margin: 0 0 0 15px;
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: var(--card-border-radius) !important;
+  }
+
+  .progressbar-head strong {
+    font-size: 12px;
+  }
+
+  .formStep-2 {
+    flex-direction: column;
+  }
+ #cartd{
+  padding: 5px;
+ }
+
+  #taskTable{
+    overflow-x: scroll !important;
+  }
+
+
 }
