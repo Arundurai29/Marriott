@@ -32,10 +32,10 @@
     />
     <style>
       .company-ff2 {
-    display: flex;
-    justify-content: left !important;
-    column-gap: 20px;
-}
+        display: flex;
+        justify-content: left !important;
+        column-gap: 20px;
+      }
     </style>
   </head>
   <body>
@@ -62,7 +62,7 @@
                   <input type="text" id="title" value="478272837" />
                 </div>
                 <div class="company-fild">
-                  <label for="title"> Mobile No  (Aadhar linked)</label>
+                  <label for="title"> Mobile No (Aadhar linked)</label>
                   <input
                     type="text"
                     class="form-control"
@@ -71,7 +71,6 @@
                 </div>
               </div>
               <div class="company-ff2">
-              
                 <div class="company-fild">
                   <label for="title">Password </label>
                   <input
@@ -91,10 +90,12 @@
                   />
                 </div>
               </div>
-              <button id="add-btn" type="submit">Submit</button>
+              <button id="add-btn" class="vend-sub-btn" type="submit">
+                Submit
+              </button>
             </form>
             <div class="home-table-content user-content">
-              <h2 class="head">Vendors LIST</h2>
+              <h2 class="ventHead">Vendors List</h2>
               <div class="userlist">
                 <div class="userlist-c1">
                   <span> Show </span>
@@ -112,6 +113,7 @@
                 <div class="userlist-c1">
                   <label for="title">Search: </label>
                   <input
+                    class="user-search"
                     type="search"
                     id="
                    Password"
@@ -120,58 +122,105 @@
                 </div>
               </div>
               <div class="listtable">
-              <table>
-                <thead>
-                  <th>S.No</th>
-                  <th>Full Name</th>
-                  <th>Role</th>
-                  <th>Email Id</th>
-                  <th>Mobile No</th>
-                  <th>Group #</th>
-                  <th>Options</th>
-                </thead>
-                <tr>
-                  <td>1</td>
-                  <td>Ramesh</td>
-                  <td>Creator</td>
-                  <td>creator1@mail.com</td>
-                  <td>+91 8392839283</td>
-                  <td>Two#</td>
-                  <td>
-                    <i class="fa-solid fa-check check1"></i>
-                    <i class="fa-regular fa-eye eye"></i>
-                    <i class="fa-solid fa-xmark cancelIcon"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Ram Kannan</td>
-                  <td>Creator</td>
-                  <td>creator1@mail.com</td>
-                  <td>+91 8392839283</td>
-                  <td>Two#</td>
-                  <td>
-                    <i class="fa-solid fa-check check1"></i>
-                    <i class="fa-regular fa-eye eye"></i>
-                    <i class="fa-solid fa-xmark cancelIcon"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Rajesh</td>
-                  <td>Creator</td>
-                  <td>creator1@mail.com</td>
-                  <td>+91 8392839283</td>
-                  <td>Two#</td>
-                  <td>
-                    <i class="fa-solid fa-check check1"></i>
-                    <i class="fa-regular fa-eye eye"></i>
-                    <i class="fa-solid fa-xmark cancelIcon"></i>
-                  </td>
-                </tr>
-               
-              </table>
-            </div>
+                <div class="taskTable">
+                  <div class="con-content">
+                    <h3 class="con-heading">Ramesh</h3>
+
+                    <div class="con-details">
+                      <div class="con-det">
+                        <h2>Role</h2>
+                        <p>Creator</p>
+                      </div>
+
+                      <div class="con-det">
+                        <h2>Email Id</h2>
+                        <p>creator1@mail.com</p>
+                      </div>
+                      <div class="con-det">
+                        <h2>Mobile No</h2>
+                        <p>+91 8392839283</p>
+                      </div>
+                      <div class="con-det">
+                        <h2>Groups</h2>
+                        <p>One#</p>
+                      </div>
+
+                      <div class="con-det">
+                        <h2>Options</h2>
+                        <p>
+                          <i class="fa-solid fa-check chec"></i>
+                          <i class="fa-regular fa-eye eye"></i>
+                          <i class="fa-solid fa-xmark cancelIcon"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="con-content">
+                    <h3 class="con-heading">Ram Kannan</h3>
+
+                    <div class="con-details">
+                      <div class="con-det">
+                        <h2>Role</h2>
+                        <p>Creator</p>
+                      </div>
+
+                      <div class="con-det">
+                        <h2>Email Id</h2>
+                        <p>creator1@mail.com</p>
+                      </div>
+                      <div class="con-det">
+                        <h2>Mobile No</h2>
+                        <p>+91 8392839283</p>
+                      </div>
+                      <div class="con-det">
+                        <h2>Groups</h2>
+                        <p>Two#</p>
+                      </div>
+
+                      <div class="con-det">
+                        <h2>Options</h2>
+                        <p>
+                          <i class="fa-solid fa-check chec"></i>
+                          <i class="fa-regular fa-eye eye"></i>
+                          <i class="fa-solid fa-xmark cancelIcon"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="con-content">
+                    <h3 class="con-heading">Rajesh</h3>
+
+                    <div class="con-details">
+                      <div class="con-det">
+                        <h2>Role</h2>
+                        <p>Creator</p>
+                      </div>
+
+                      <div class="con-det">
+                        <h2>Email Id</h2>
+                        <p>creator1@mail.com</p>
+                      </div>
+                      <div class="con-det">
+                        <h2>Mobile No</h2>
+                        <p>+91 8392839283</p>
+                      </div>
+                      <div class="con-det">
+                        <h2>Groups</h2>
+                        <p>One#</p>
+                      </div>
+
+                      <div class="con-det">
+                        <h2>Options</h2>
+                        <p>
+                          <i class="fa-solid fa-check chec"></i>
+                          <i class="fa-regular fa-eye eye"></i>
+                          <i class="fa-solid fa-xmark cancelIcon"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="userlist-nav">
                 <div class="userlist-nav1">
                   <p>Showing 1 to 10 of 22 entries</p>

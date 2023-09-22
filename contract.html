@@ -38,6 +38,7 @@
     />
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
   </head>
+
   <body>
     <div class="themer"></div>
     <section class="web-body">
@@ -49,164 +50,49 @@
           <div class="navbar"></div>
         </nav>
         <section class="main-content">
-          <h1 class="head">Contracts</h1>
-
-          <div class="filter-section">
-            <div class="first-section">
-              <div class="dropdown">
-                <button
-                  class="btn-conss btn dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  All Contracts
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="filter-second">
-              <div class="serch-group">
-                <input type="search" id="serInput" placeholder="Search" />
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </div>
-
-              <button id="add-btn" onclick="showPopup()" style="margin: -9px 20px 0px;">
-                <i class="fa-solid fa-plus"></i>Add New Contract
-              </button>
-
-              <div id="myModal" class="modal">
-                <div class="modal-content">
-                  <div class="above-heading">
-                    <h2>New Contract</h2>
-                    <p>Bulk Contract Doc Processing</p>
-                  </div>
-                  <form onsubmit="return addOrUpdateTask()">
-                    <div class="first-form-content">
-                      <div class="ffc1">
-                        <div class="download">
-                          <label for="title">No. of Contract</label>
-                          <input type="text" id="title" placeholder="Ex. 10" />
-                        </div>
-                        <button id="add-btn">
-                         <img src="assets/img/icon/download-cloud.svg" alt=""> Download
-                        </button>
-                      </div>
-                      <div class="ffc2">
-                        <label for="title">Upload Contract Template</label>
-                        <div class="brow">
-                          <input
-                            type="text"
-                            id="title"
-                            placeholder="No file Selected"
-                          />
-                          <button class="brow-btn" onclick="document.getElementById('getFile').click()">Browse</button>
-                          <input type='file' id="getFile" style="display:none">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="second-form-content">
-                      <h3>Header</h3>
-                      <textarea name="editor" class="ckeditor"></textarea>
-                      <div class="sfc1">
-                        <button id="add-btn" onclick="contog()">
-                          <i class="fa-solid fa-plus"></i>Add More Content
-                        </button>
-                        <button id="add-btn" onclick="contog()">
-                          <i class="fa-solid fa-minus"></i>Remove Content
-                        </button>
-                      </div>
-                    </div>
-                    <div class="thrid-form-content">
-                      <h3>Footer</h3>
-                      <div id="editor"></div>
-                    </div>
-                    <div class="fourth-form-content">
-                      <div class="fffc1">
-                        <label for="title">Contract Name</label>
-                        <input type="text" id="title" placeholder="Name" />
-                      </div>
-                      <div class="fffc1">
-                        <label for="title">Groups</label>
-                        <select name="pets" id="pet-select">
-                          <option value="">Select</option>
-                          <option value="dog">Dog</option>
-                          <option value="cat">Cat</option>
-                          <option value="hamster">Hamster</option>
-                          <option value="parrot">Parrot</option>
-                          <option value="spider">Spider</option>
-                          <option value="goldfish">Goldfish</option>
-                      </select>
-                      </div>
-                      <div class="fffc1">
-                        <label for="title">Date Range</label>
-                        <input type="text" id="title" placeholder="Select" />
-                      </div>
-                      <div class="fffc1">
-                        <label for="title">Document Logo</label>
-                        <div class="brow">
-                          <input
-                            type="text"
-                            id="title"
-                            placeholder="No file Selected"
-                          />
-                          <button class="brow-btn" onclick="document.getElementById('getFile').click()">Browse</button>
-                          <input type='file' id="getFile" style="display:none">
-                        </div>
-                      </div>
-                      <div class="fffc1">
-                        <label for="title">Work Flow</label>
-                        <select name="pets" id="pet-select">
-                          <option value="">Select</option>
-                          <option value="dog">Dog</option>
-                          <option value="cat">Cat</option>
-                          <option value="hamster">Hamster</option>
-                          <option value="parrot">Parrot</option>
-                          <option value="spider">Spider</option>
-                          <option value="goldfish">Goldfish</option>
-                      </select>
-                      </div>
-                    </div>
-                    <!-- <input type="hidden" id="editIndex" value="" />
-                    <label for="title">Title:</label>
-                    <input type="text" id="title" />
-                    <textarea name="editor" class="ckeditor"></textarea>
-                    <label for="description">Description:</label>
-                    <input type="text" id="description" />
-
-                    <label for="dueDate">Due Date:</label>
-                    <input type="date" id="dueDate" />
-
-                    <label for="priority">Priority:</label>
-                    <select id="priority">
-                      <option value="low">Low</option>
-                      <option value="medium">Medium</option>
-                      <option value="high">High</option>
-                    </select>
-
-                    <label for="assignee">Assignee:</label>
-                    <input type="text" id="assignee" />
-
-                    <label for="location">Location:</label>
-                    <input type="text" id="location" />
-
-                    <label for="category">Category:</label>
-                    <input type="text" id="category" /> -->
-
-                    <button  id="add-btn" class="popsum" type="submit">Create</button>
-                    <button class="popcan" type="button" onclick="hidePopup()"><i class="fa-solid fa-xmark "></i></button>
-                  </form>
+          <div class="Cont-section">
+            <h1 class="head">Contracts</h1>
+            <div class="filter-section">
+              <div class="first-section">
+                <div class="dropdown">
+                  <button
+                    class="btn-conss btn dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    All Contracts
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div class="filter-second">
+                <div class="serch-group">
+                  <input type="search" id="serInput" placeholder="Search" />
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+
+                <button style="margin: -9px 20px 0px; background: none">
+                  <a class="cont-addbtn2" href="newcontract.html"
+                    >+ Add New Contract</a
+                  >
+                </button>
               </div>
             </div>
           </div>
+
           <div class="date-filter">
             <!-- <input placeholder="Date" id="dateInput" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" /> -->
             <!-- <input type="date" placeholder="time" id="dateInput">
@@ -227,20 +113,87 @@
             <p>2,000 Records found</p>
             <p>1-100 of 2,000</p>
           </div>
+          <div class="contractTable">
+            <div class="taskTable" style="padding: 40px">
+              <div class="con-content">
+                <h3 class="con-heading">Security Guard Service Agreement</h3>
+                <div class="con-details">
+                  <div class="con-det">
+                    <h2>Date</h2>
+                    <p>21/06/2023 01:12 PM</p>
+                  </div>
+                  <div class="con-det">
+                    <h2>Groups</h2>
+                    <p>One#</p>
+                  </div>
+                  <div class="con-det">
+                    <h2>Status</h2>
+                    <p>Active</p>
+                  </div>
+                  <div class="con-det">
+                    <h2>Options</h2>
+                    <p>
+                      <i class="fa-solid fa-check chec"></i>
+                      <i class="fa-regular fa-eye eye"></i>
+                      <i class="fa-solid fa-xmark cancelIcon"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="con-content">
+                <h3 class="con-heading">Group Sales Agreement</h3>
 
-          <table id="taskTable">
-            <!-- <tr>
-      <th>S.no</th>
-      <th>Title</th>
-      <th>Contract Name</th>
-      <th>Groups</th>
-      <th>Created Date</th>
-      <th>Status</th>
-      <th>Options</th>
-      <th>Category</th>
-      <th>Action</th>
-    </tr> -->
-          </table>
+                <div class="con-details">
+                  <div class="con-det">
+                    <h2>Date</h2>
+                    <p>21/06/2023 02:00 PM</p>
+                  </div>
+                  <div class="con-det">
+                    <h2>Groups</h2>
+                    <p>One#</p>
+                  </div>
+                  <div class="con-det">
+                    <h2>Status</h2>
+                    <p>Active</p>
+                  </div>
+                  <div class="con-det">
+                    <h2>Options</h2>
+                    <p>
+                      <i class="fa-solid fa-check chec"></i>
+                      <i class="fa-regular fa-eye eye"></i>
+                      <i class="fa-solid fa-xmark cancelIcon"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="con-content">
+                <h3 class="con-heading">Standard Service Agreement</h3>
+
+                <div class="con-details">
+                  <div class="con-det">
+                    <h2>Date</h2>
+                    <p>21/06/2023 02:00 PM</p>
+                  </div>
+                  <div class="con-det">
+                    <h2>Groups</h2>
+                    <p>One#</p>
+                  </div>
+                  <div class="con-det">
+                    <h2>Status</h2>
+                    <p>Active</p>
+                  </div>
+                  <div class="con-det">
+                    <h2>Options</h2>
+                    <p>
+                      <i class="fa-solid fa-check chec"></i>
+                      <i class="fa-regular fa-eye eye"></i>
+                      <i class="fa-solid fa-xmark cancelIcon"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </section>
@@ -254,191 +207,7 @@
         theme: "snow",
       });
     </script>
-    <script>
-      function addOrUpdateTask() {
-        const title = document.getElementById("title").value;
-        const description = document.getElementById("description").value;
-        const dueDate = document.getElementById("dueDate").value;
-        const priority = document.getElementById("priority").value;
-        const assignee = document.getElementById("assignee").value;
-        const location = document.getElementById("location").value;
-        const category = document.getElementById("category").value;
 
-        const editIndex = document.getElementById("editIndex").value;
-        const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-
-        if (editIndex !== "") {
-          // Editing an existing task
-          tasks[editIndex] = {
-            title: title,
-            description: description,
-            dueDate: dueDate,
-            priority: priority,
-            assignee: assignee,
-            location: location,
-            category: category,
-            completed: tasks[editIndex].completed,
-          };
-        } else {
-          // Adding a new task
-          const newTask = {
-            title: title,
-            description: description,
-            dueDate: dueDate,
-            priority: priority,
-            assignee: assignee,
-            location: location,
-            category: category,
-            completed: false,
-          };
-          tasks.push(newTask);
-        }
-
-        // Store the updated tasks back in localStorage
-        localStorage.setItem("tasks", JSON.stringify(tasks));
-
-        // Close the popup after adding/editing the task
-        hidePopup();
-
-        // Refresh the table to display the updated tasks
-        displayTasks();
-
-        // Clear the input fields after adding/editing the task
-        document.getElementById("title").value = "";
-        document.getElementById("description").value = "";
-        document.getElementById("dueDate").value = "";
-        document.getElementById("priority").value = "low";
-        document.getElementById("assignee").value = "";
-        document.getElementById("location").value = "";
-        document.getElementById("category").value = "";
-
-        return false;
-      }
-
-      function showPopup() {
-       const modal = document.getElementById("myModal");
-        modal.style.display = "block";
-      }
-
-      function hidePopup() {
-       const modal = document.getElementById("myModal");
-       modal.style.display = "none";
-       document.getElementById("editIndex").value = "";
-       }
-
-      function editTask(index) {
-        const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-        const task = tasks[index];
-
-        // Populate the form fields with the task details
-        document.getElementById("title").value = task.title;
-        document.getElementById("description").value = task.description;
-        document.getElementById("dueDate").value = task.dueDate;
-        document.getElementById("priority").value = task.priority;
-        document.getElementById("assignee").value = task.assignee;
-        document.getElementById("location").value = task.location;
-        document.getElementById("category").value = task.category;
-
-        // Set the index of the task being edited in the hidden input field
-        document.getElementById("editIndex").value = index;
-
-        // Show the popup with the populated form
-        showPopup();
-      }
-
-      function deleteTask(index) {
-        const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-        tasks.splice(index, 1);
-        localStorage.setItem("tasks", JSON.stringify(tasks));
-        displayTasks();
-      }
-
-      function toggleCompleted(index) {
-        const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-        tasks[index].completed = !tasks[index].completed;
-        localStorage.setItem("tasks", JSON.stringify(tasks));
-        displayTasks();
-      }
-      function displayTasks() {
-        const taskTable = document.getElementById("taskTable");
-        const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-
-        // Clear existing rows from the table
-        taskTable.innerHTML =
-          "<tr><th>S.no</th><th>Contract Name</th><th> Groups</th><th>Created Date</th><th>Status</th><th>Options</th></tr>";
-
-        // Add each task row to the table
-        tasks.forEach((task, index) => {
-          const row = taskTable.insertRow();
-          row.insertCell().textContent = index + 1; // Serial No
-          row.insertCell().textContent = task.title;
-          row.insertCell().textContent = task.description;
-          row.insertCell().textContent = task.dueDate;
-          row.insertCell().textContent = task.priority;
-          // row.insertCell().textContent = task.assignee;
-          // row.insertCell().textContent = task.location;
-          // row.insertCell().textContent = task.category;
-
-          if (task.completed) {
-            row.style.textDecoration = "line-through";
-          }
-
-          const actionCell = row.insertCell();
-          const toggleButton = document.createElement("button");
-          toggleButton.innerHTML = task.completed
-            ? '<i class="fa-solid fa-check check1"></i>'
-            : '<i class="fa-solid fa-check check"></i>';
-          toggleButton.onclick = () => toggleCompleted(index);
-          actionCell.appendChild(toggleButton);
-
-          const editButton = document.createElement("button");
-          editButton.innerHTML = '<i class="fa-regular fa-eye eye"></i>';
-          editButton.onclick = () => editTask(index);
-          actionCell.appendChild(editButton);
-
-          const deleteButton = document.createElement("button");
-          deleteButton.innerHTML =
-            '<i class="fa-solid fa-xmark cancelIcon"></i>';
-          deleteButton.onclick = () => deleteTask(index);
-          actionCell.appendChild(deleteButton);
-        });
-      }
-
-      // Display existing tasks on page load
-      displayTasks();
-
-      // Simulate initial tasks for demonstration purposes
-      const initialTasks = [
-        {
-          title: "Security Guard Service Agreement",
-          description: "One#",
-          dueDate: "21/06/2023 01:12 PM",
-          priority: "Active",
-          
-        },
-        {
-          title: "Group Sales Agreement",
-          description: "One#",
-          dueDate: "21/06/2023 02:00 PM",
-          priority: "Active",
-       
-        },
-        {
-          title: "Standard Service Agreement",
-          description: "One#",
-          dueDate: "21/06/2023 02:00 PM",
-          priority: "Active",
-          
-        },
-       
-      ];
-
-      // Store the initial tasks in localStorage if not already present
-      if (!localStorage.getItem("tasks")) {
-        localStorage.setItem("tasks", JSON.stringify(initialTasks));
-      }
-      displayTasks();
-    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
